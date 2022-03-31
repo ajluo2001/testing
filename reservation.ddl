@@ -25,11 +25,11 @@ CREATE TABLE Model (
 
 -- the boat reservation
 CREATE TABLE Reservation (
-   sID INT NOT NULL REFERENCES skippers,
+   sID INT NOT NULL REFERENCES Skippers,
    -- The sID of the boat
    day timestamp NOT NULL,
    -- the day of the reservation
-   mID INT NOT NULL REFERENCES model,
+   mID INT NOT NULL REFERENCES Model,
    -- model id of the boat that is reserved 
    dID INT NOT NULL,
    -- the dock id
